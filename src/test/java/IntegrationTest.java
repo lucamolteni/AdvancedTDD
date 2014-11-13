@@ -19,6 +19,6 @@ public class IntegrationTest {
 
         driver.get("http://localhost:8080/");
         WebElement h1 = driver.findElement(By.tagName("h1"));
-        Assert.assertEquals("Ciao da Jetty Embedded", h1.getText());
+        Assert.assertEquals("Ciao Luca", h1.getText());
     }
 }

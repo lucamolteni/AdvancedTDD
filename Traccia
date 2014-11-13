@@ -7,10 +7,11 @@
 * Forzare il sync delle dipendenze
 * Usare il plugin application
 * Creare un nuovo unit test da idea
+* Fare un hello world semplice via servlet
 * Impostare le run configuration di idea di Gradle e non di Groovy
 * Eseguire il nuovo unit test da gradle
+* Integrare Portiere con Servlet
 
 TODO
-* Fare un hello world semplice via servlet
 * esporre un servizio rest
 * servire un file html

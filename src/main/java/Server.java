@@ -15,7 +15,7 @@ public class Server {
             public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
                 response.setContentType("text/html");
                 response.setStatus(HttpServletResponse.SC_OK);
-                response.getWriter().println("<h1>Ciao da Jetty Embedded</h1>");
+                response.getWriter().println(String.format("<h1>%s</h1>", new Portiere().saluta("Luca")));
                 ((Request)request).setHandled(true);
             }
         };
