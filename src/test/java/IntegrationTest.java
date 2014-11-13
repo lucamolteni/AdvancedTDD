@@ -9,7 +9,8 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class IntegrationTest {
     @Before
     public void setUp() throws Exception {
-        Main.main(null);
+        Server server = new Server();
+        server.startServer();
     }
 
     @Test
