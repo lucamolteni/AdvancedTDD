@@ -6,8 +6,11 @@
 * Importare jetty via libreria
 * Forzare il sync delle dipendenze
 * Usare il plugin application
+* Creare un nuovo unit test da idea
+
 
 TODO
+* Eseguire il nuovo unit test da gradle
 * Fare un hello world semplice via servlet
 * esporre un servizio rest
 * servire un file html
