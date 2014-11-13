@@ -9,8 +9,9 @@ import java.io.IOException;
 
 public class Server {
     public void startServer() throws Exception {
-        Portiere portiere = new Portiere();
         HtmlGenerator htmlGenerator = new HtmlGenerator();
+
+        Portiere portiere = new Portiere(htmlGenerator);
 
         Handler handler=new AbstractHandler()
         {
@@ -19,7 +20,7 @@ public class Server {
                 response.setContentType("text/html");
                 response.setStatus(HttpServletResponse.SC_OK);
 
-                String html = htmlGenerator.h1(portiere.saluta("Luca"));
+                String html = portiere.saluta("Luca");
                 response.getWriter().println(html);
 
                 ((Request)request).setHandled(true);

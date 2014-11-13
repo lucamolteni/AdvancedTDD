@@ -12,6 +12,8 @@
 * Eseguire il nuovo unit test da gradle
 * Integrare Portiere con Servlet
 * Avere un servizio esterno che mi genera l'html
+* Ridurre la logica all'interno della classe Server
+* Messo insieme Portiere e HtmlGenerator
 
 TODO
 * esporre un servizio rest
