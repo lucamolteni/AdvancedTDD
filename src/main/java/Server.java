@@ -20,7 +20,8 @@ public class Server {
                 response.setContentType("text/html");
                 response.setStatus(HttpServletResponse.SC_OK);
 
-                String html = portiere.saluta("Luca");
+                String name = request.getParameter("name");
+                String html = portiere.saluta(name);
                 response.getWriter().println(html);
 
                 ((Request)request).setHandled(true);

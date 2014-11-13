@@ -16,9 +16,8 @@ public class IntegrationTest {
     @Test
     public void webServerShouldGreet() {
         WebDriver driver = new HtmlUnitDriver();
-
-        driver.get("http://localhost:8080/");
+        driver.get("http://localhost:8080/saluta?name=Gianni");
         WebElement h1 = driver.findElement(By.tagName("h1"));
-        Assert.assertEquals("Ciao Luca", h1.getText());
+        Assert.assertEquals("Ciao Gianni", h1.getText());
     }
 }
