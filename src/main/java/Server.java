@@ -10,6 +10,7 @@ import java.io.IOException;
 public class Server {
     public void startServer() throws Exception {
         Portiere portiere = new Portiere();
+        HtmlGenerator htmlGenerator = new HtmlGenerator();
 
         Handler handler=new AbstractHandler()
         {
@@ -17,7 +18,10 @@ public class Server {
             public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
                 response.setContentType("text/html");
                 response.setStatus(HttpServletResponse.SC_OK);
-                response.getWriter().println(String.format("<h1>%s</h1>", portiere.saluta("Luca")));
+
+                String html = htmlGenerator.h1(portiere.saluta("Luca"));
+                response.getWriter().println(html);
+
                 ((Request)request).setHandled(true);
             }
         };
