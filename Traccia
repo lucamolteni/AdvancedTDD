@@ -4,7 +4,8 @@
 * Provare a lanciare una classe Java da idea
 * Provare a lanciare la classe Java da Gradle
 * Importare jetty via libreria
-
+* Forzare il sync delle dipendenze
+* Usare il plugin application
 
 TODO
 * Fare un hello world semplice via servlet
